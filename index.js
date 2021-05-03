@@ -1,1 +1,1 @@
-function map(array,function )
+function map(array,function())
