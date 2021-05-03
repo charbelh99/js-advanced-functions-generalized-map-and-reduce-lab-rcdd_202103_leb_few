@@ -1,18 +1,7 @@
-function map(array,){
-  for(let i=0;i<array.length;i++){
-    array[i]=-array[i];
+function map(obj, cb) {
+  const arr = []
+  for (const key in obj) {
+    arr.push(cb(obj[key]))
   }
-  return array;
-}
-function map(array,){
-  for(let i=0;i<array.length;i++){
-    array[i]=array[i]*2;
-  }
-  return array;
-}
-function map(array,){
-  for(let i=0;i<array.length;i++){
-    array[i]=array[i]*array[i];
-  }
-  return array;
+  return arr
 }
